@@ -33,14 +33,14 @@ async function sendMessage(){
             .setTitle('Ladies and gentlemen...')
             .setImage('https://media1.tenor.com/images/e39daff4d4a5ebea5dd4e379fdb22e32/tenor.gif?itemid=20442724')
             .setColor(0xff0000);
-        channel.send(message);
+        await channel.send(message);
     } else {
         console.log('no channel');
     }
 }
 
-client.once('ready', () => {
-    sendMessage();
+client.once('ready', async () => {
+    await sendMessage();
     process.exit(0);
 });
 
