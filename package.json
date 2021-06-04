@@ -1,0 +1,15 @@
+{
+  "name": "theweekendbot",
+  "version": "0.1.0",
+  "description": "Ladies and gentlemen... the weekend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan Gingrich",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  }
+}
