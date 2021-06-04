@@ -14,7 +14,7 @@ async function sendMessage(){
         console.log("no guild");
         return;
     }
-    console.log(guild);
+
     if (!guild.available) {
         console.log("not available");
     }
@@ -40,8 +40,8 @@ async function sendMessage(){
 }
 
 client.once('ready', () => {
-	console.log('Ready!');
     sendMessage();
+    process.exit(0);
 });
 
 client.login(config.BOT_TOKEN);
